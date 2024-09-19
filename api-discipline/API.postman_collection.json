@@ -1,0 +1,321 @@
+{
+	"info": {
+		"_postman_id": "2d861774-e881-4519-9942-f1beb9c58c10",
+		"name": "API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25610792"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"euuu\",\n    \"password\": \"123\",\n    \"confirm_password\": \"123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/api/user/create/",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"create",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"euuu\",\n    \"password\": \"123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/api/user/login/",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/api/user/logout/",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"logout",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"euuuu\",\n    \"password\": \"1234\",\n    \"confirm_password\": \"1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/api/user/update/4/",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"update",
+								"4",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/api/user/get/3/",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"get",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/api/user/delete/2/",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"delete",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Discipline",
+			"item": [
+				{
+					"name": "Create Discipline",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Matemática\",\n    \"school\": \"Escola\",\n    \"schedule\": \"12:00:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/api/discipline/create/",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"discipline",
+								"create",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Matemática\",\n    \"school\": \"Escola\",\n    \"schedule\": \"13:00:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/api/discipline/update/1/",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"discipline",
+								"update",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/api/discipline/get/1/",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"discipline",
+								"get",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/api/discipline/delete/1/",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"discipline",
+								"delete",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  discipline_db:
+    restart: always
+    container_name: discipline-db
+    image: postgres
+    environment:
+      POSTGRES_NAME: api_discipline
+      POSTGRES_USER: api_discipline
+      POSTGRES_DB: api_discipline
+      POSTGRES_PASSWORD: api_discipline
+    ports:
+      - "5435:5432"
+      
+  discipline_backend:
+    container_name: discipline-backend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    entrypoint: /entrypoint.sh
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    depends_on:
+      - discipline_db
+    restart: on-failure
